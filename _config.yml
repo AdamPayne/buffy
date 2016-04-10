@@ -1,12 +1,10 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Buffy the Vampire Slayer
-subtitle: Elements of Feministic Theory
+title: Buffy Web
+subtitle:
 description:
-author: People 
+author: ENG360
 language: Elvian
 timezone:
 
@@ -52,7 +50,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: YYYY-MM-DD
+date_format: MM-DD
 time_format: HH:mm:ss
 
 # Pagination
