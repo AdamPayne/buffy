@@ -66,7 +66,10 @@ theme: buffy
 deploy:
   type:
 
+# Admin
 admin:
-  username: admin
-  password_hash: $2a$08$5ABdA9ysbCWjwNbQ06Kx7eRIgoj6h7CvvncRpZ8EmjXpwBgzBgXpW
-  secret: a secret something
+    name: admin
+    password: admin
+    secret: hey hexo
+    expire: 60*1
+    # cors: http://localhost:3000
