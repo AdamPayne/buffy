@@ -1,0 +1,7 @@
+ul.post-items
+  each post in page.posts.toArray()
+    li
+      h3
+        a(href=url_for(post.path))= post.title
+      p
+        != post.content
