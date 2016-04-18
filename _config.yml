@@ -39,6 +39,7 @@ highlight:
   auto_detect: false
   tab_replace:
 
+disqus_shortname: buffy-web
 # Category & Tag
 default_category: uncategorized
 category_map:
