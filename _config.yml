@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Site
 title: Buffy Web
 subtitle:
@@ -74,3 +75,8 @@ admin:
     secret: hey hexo
     expire: 60*1
     # cors: http://localhost:3000
+=======
+name: Travis Neilson
+markdown: redcarpet
+exclude: ["node_modules", "gulpfile.js", "package.json"]
+>>>>>>> newplatform
