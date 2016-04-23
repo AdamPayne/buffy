@@ -1,6 +1,9 @@
 extends base
 
 block site_body
-  include _partial/post/list
+  // include _partial/post/list
 
-  include _partial/post/list_pagination
+  // include _partial/post/list_pagination
+  div#cont
+    script.
+      console.log("#{page.posts.toArray())}")

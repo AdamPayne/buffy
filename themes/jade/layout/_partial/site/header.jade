@@ -1,12 +1,21 @@
-div.navbar-fixed
-  div.nav-wrapper .grey .lighten-5    
-    h3.black-text
-      a(href=config.root)= config.title
+- var header_classes = ["navbar", "navbar-default"];
+div(class=header_classes)
+  div.container-fluid
+    div(class=["navbar-header"])
+      button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse")
+        span(class="sr-only") Toggle
+        span(class="icon-bar")
+        span(class="icon-bar")
+        span(class="icon-bar")
+      a(class=["navbar-brand"] href=config.root)=config.title
     
-    ul(id="nav-mobile" class="right hide-on-med-and-down")
-      li
-        a(href="#") Index
-      li
-        a(href="#") Index
-      li
-        a(href="#") Index
+    div(class=["collapse", "navbar-collapse"])
+      ul(class=["nav", "navbar-nav", "navbar-left"])
+        li.active
+          a(href="#") Index
+        li
+          a(href="#") Archive
+          
+      ul(class=["nav", "navbar-nav", "navbar-right"])
+        li
+          a(href="/admin")="Log In"
