@@ -1,0 +1,12 @@
+.container  
+  {% for post in site.posts limit: 12 %}
+  .row
+    div(class="col l12")
+      .section
+        .name 
+          a(href="{{post.url}}") {{post.title}}
+        .date {{post.date | date: "%b %d, %Y"}}
+        p {{post.content}}
+        
+      .divider
+  {% endfor %}
