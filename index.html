@@ -7,3 +7,23 @@ title: Buffy
   <div class="main">
   {% include front.html %}
 </div>
+<script type="text/javascript">
+  var cookies = document.cookie;
+  if(cookies.indexOf("visited")==-1){
+    console.log("not visited0");
+    document.getElementById("header").style.display = "none";
+    console.log("not visited1");
+    document.getElementsByClassName("main")[0].style.display = "none";
+    console.log("not visited2");
+  } else {
+    document.getElementById("landing-page").style.display = "none";
+    console.log("visited");
+  }
+  function start() {
+    document.cookie = "visited = true;"
+    document.getElementById("landing-page").style.display = "none";
+    document.getElementById("header").style.display = "block";
+    document.getElementsByClassName("main")[0].style.display = "block";
+    console.log(document.cookie);
+  }
+</script>

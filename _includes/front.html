@@ -1,2 +1,33 @@
-<div class="container"> 
-{% for post in site.posts limit: 12 %}<div class="row"><div class="col l12"><div class="section"><div class="name"> <a href="{{post.url}}">{{post.title}}</a></div><div class="date">{{post.date | date: "%b %d, %Y"}}</div><p>{{post.content}}</p></div><div class="divider"></div></div></div>{% endfor %}</div>
+
+<div class="container">{% for post in site.posts limit: 12 %}
+  <div class="row">
+    <div class="col l12">
+      <div class="section">
+        <div class="name"> <a href="{{post.url}}">{{post.title}}</a></div>
+        <div class="date">{{post.date | date: "%b %d, %Y"}}</div>
+        <p>{{post.content}}</p>
+      </div>
+      <div class="divider"></div>
+    </div>
+  </div>{% endfor %}
+</div>
+<script type="text/javascript">
+  var cookies = document.cookie;
+  if(cookies.indexOf("visited")==-1){
+    console.log("not visited0");
+    document.getElementById("header").style.display = "none";
+    console.log("not visited1");
+    document.getElementById("main").style.display = "none";
+    console.log("not visited2");
+  } else {
+    document.getElementById("landing-page").style.display = "none";
+    console.log("visited");
+  }
+  function start() {
+    document.cookie = "visited = true;"
+    document.getElementById("landing-page").style.display = "none";
+    document.getElementById("header").style.display = "block";
+    document.getElementById("main").style.display = "block";
+    console.log(document.cookie);
+  }
+</script>

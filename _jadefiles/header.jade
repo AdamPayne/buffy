@@ -1,10 +1,14 @@
+#landing-page
+  canvas(id="myCanvas")
+  a(class="waves-effect waves-light cyan lighten-2 myst-btn btn" onclick="start()") Become a Scooby
+  script(type='text/javascript' src="../assets/js/canvas.js")
 mixin links
   li
     a(href="#") One
   li
     a(href="#") Two
 
-header
+header(id="header")
   nav.black
     .nav-wrapper
         a(href="#" class="brand-logo") Buffy
@@ -14,7 +18,7 @@ header
           +links
         ul(class="side-nav" id="slide-out")
           +links
-script.
-  $('document').ready(function() {
-      $('.button-collapse').sideNav()
-  });
+  script.
+    $('document').ready(function() {
+        $('.button-collapse').sideNav()
+    });
